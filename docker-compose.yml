@@ -1,0 +1,21 @@
+version: '3'
+services:
+  chisel:
+    build: .
+    volumes:
+      - ./app:/app
+#    links:
+#      - wordpress_db:mysql
+#      - wordpress:php
+#  wordpress:
+#    image: wordpress
+#    links:
+#      - wordpress_db:mysql
+#    ports:
+#      - 8080:80
+#    volumes:
+#      - ./app/wordpress:/var/www/html
+#  wordpress_db:
+#    image: mariadb
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
